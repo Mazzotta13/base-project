@@ -20,11 +20,5 @@ pipeline {
       }
     }
 
-    stage('send email') {
-      steps {
-        mail(subject: 'pipeline test', body: 'pipeline test baseproject success', to: 'mazzottaalessio93@gmail.com')
-      }
-    }
-
   }
 }
